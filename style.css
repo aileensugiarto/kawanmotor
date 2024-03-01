@@ -1,0 +1,203 @@
+body{
+  background-color: black;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+  text-align: center;
+}
+
+/* NAVBAR */
+/* nav */
+nav{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* Navigation Bar Link */
+.navbar_link{
+  text-decoration: none;
+  padding-right: 35px;
+  font-size: 25px;
+  color: white;
+}
+/* Navigation Bar Hover */
+.navbar_link:hover{
+  color: rgb(255, 92, 28);
+}
+
+
+/* WEBSITE NAME */
+/* Website Name */
+.website_name{
+  color: rgb(255, 92, 28);
+  font-weight: bold;
+  font-size: 110px;
+}
+/* Website Name div */
+#website_name_section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+/* IMAGE */
+/* Image Section */
+#image_section{
+  background-color: black;
+  height: 400px;
+}
+
+.image_container{
+  position: relative;
+}
+
+.image_div{
+  text-align: center;
+}
+
+.image_text{
+  color: white;
+}
+.image_text_div{
+  position: absolute;
+  top: 75px;
+  left: 270px;
+  font-size: 65px;
+}
+
+.good_quality_text{
+  color: rgb(255, 92, 28);
+}
+
+
+
+/* ABOUT US */
+/* About Us Section */
+#about_us_section{
+  margin-top: 200px;
+  text-align: center;
+}
+/* About Us Image */
+.about_us_img{
+  float: left;
+}
+/* About Us Image Di */
+.about_us_img_div{
+  margin-left: 50px;
+}
+/* About Us Text */
+.about_us_text{
+  color: white;
+  float: right;
+  width: 650px;
+  margin-right: 50px;
+}
+/* About Us Title */
+.about_us_title{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 106, 46);
+}
+/* About Us Description */
+.about_us_description{
+  font-size: 17px;
+}
+
+
+/* VISION AND MISSION */
+#vision_and_mission_section{
+  /* 520 */
+  margin-top: 670px;
+}
+
+.vision_and_mission_title{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 106, 46);
+}
+
+.vision_and_mission_title_div{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+/* PELAYANAN YANG BAIK */
+/* Good Service */
+.good_service{
+  color: white;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ECE2D2;
+  padding: 20px;
+  margin-right: 15px;
+}
+/* Good Service Title */
+.good_service_title{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 106, 46);
+}
+/* Good Service Description */
+.good_service_description{
+  color: white;
+}
+.good_quality_products_image{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+/* PRODUK BERKUALITAS */
+/* Good Quality Products */
+.good_quality_products{
+  color: white;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ECE2D2;
+  padding: 20px;
+  margin-right: 15px;
+}
+/* Good Quality Products Title */
+.good_quality_products_title{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 106, 46);
+}
+/* Good Service Description */
+.good_quality_products_description{
+  color: white;
+}
+
+
+/* HARGA TERJANGKAU */
+.affordable_price{
+  color: white;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ECE2D2;
+  padding: 20px;
+}
+/* Good Service Title */
+.affordable_price_title{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 106, 46);
+}
+/* Good Service Description */
+.affordable_price_description{
+  color: white;
+}
+
+.container{
+  width: 100%;
+
+  display: flex;
+
+}
