@@ -1,203 +1,329 @@
-body{
-  background-color: black;
-  font-family:Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  transition: background-color 0.3s;
+}
+.navbar-transparent {
+  background-color: transparent;
+}
+.navbar-scrolled {
+  background-color: #E1DFDD;
 }
 
-/* HEADER */
-header{
-  text-align: center;
-}
-
-/* NAVBAR */
-/* nav */
-nav{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-/* Navigation Bar Link */
-.navbar_link{
-  text-decoration: none;
-  padding-right: 35px;
-  font-size: 25px;
-  color: white;
-}
-/* Navigation Bar Hover */
-.navbar_link:hover{
-  color: rgb(255, 92, 28);
+.nav-item .nav-link {
+  font-family: 'Poppins';
+  font-size: 14px;
 }
 
 
-/* WEBSITE NAME */
-/* Website Name */
-.website_name{
+/* NAME */
+#website_name_section {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.website-name {
   color: rgb(255, 92, 28);
   font-weight: bold;
-  font-size: 110px;
+  font-size: 10vw; /* Responsive size based on viewport width */
 }
-/* Website Name div */
-#website_name_section{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
+.website-subtitle {
+  color: rgb(249, 249, 249);
+  font-weight: bold;
+  font-size: 2vw; /* Responsive size based on viewport width */
+}
+/* Media queries for better control */
+@media (max-width: 1200px) {
+  .website-name {
+    font-size: 8vw;
+  }
+  .website-subtitle {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 992px) {
+  .website-name {
+    font-size: 7vw;
+  }
+  .website-subtitle {
+    font-size: 1.5vw;
+  }
 }
 
 
-/* IMAGE */
-/* Image Section */
-#image_section{
+/* SLIDER */
+#truk_kami_section .container 
+.carousel .carousel-inner img{
+  transition: 0.3s;
+}
+
+#truk_kami_section .container 
+.carousel .carousel-inner img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* Back to Top */
+.back-to-top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+
+
+
+/* INDEX 2 */
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  transition: background-color 0.3s;
+}
+.navbar-transparent {
+  background-color: transparent;
+  .nav-link {
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
+  }
+}
+.navbar-scrolled {
+  background-color: #E1DFDD;
+}
+
+.nav-item .nav-link {
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* BANNER */
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text .text1,
+.banner-text .text2,
+.banner-text .banner-btn {
+  position: absolute;
+  left: 100px;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.banner-text .text1 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 45px;
+  top: 40%;
+}
+
+.banner-text .text2 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  top: 47%;
+}
+
+.banner-text .banner-btn {
+  font-family: 'Poppins';
+  top: 60%;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 0px;
+  background-color: #2e404c;
+  color: white;
+  transition: 0.3s;
+}
+
+.banner .banner-btn:hover {
   background-color: black;
-  height: 400px;
+  color: white;
+  /* border: 1px solid #2e404c; */
 }
 
-.image_container{
+.banner-text span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .banner-text .text1 {
+    font-size: 35px;
+  }
+  .banner-text .text2 {
+    font-size: 18px;
+  }
+  .banner-text .banner-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-text .text1 {
+    font-size: 30px;
+  }
+  .banner-text .text2 {
+    font-size: 16px;
+  }
+  .banner-text .banner-btn {
+    font-size: 12px;
+  }
+  .banner-text .text1,
+  .banner-text .text2,
+  .banner-text .banner-btn {
+    left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text .text1 {
+    font-size: 25px;
+  }
+  .banner-text .text2 {
+    font-size: 14px;
+  }
+  .banner-text .banner-btn {
+    font-size: 12px;
+  }
+  .banner-text .text1,
+  .banner-text .text2,
+  .banner-text .banner-btn {
+    left: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-text .text1 {
+    font-size: 20px;
+  }
+  .banner-text .text2 {
+    font-size: 12px;
+  }
+  .banner-text .banner-btn {
+    font-size: 8px;
+  }
+  .banner-text .text1,
+  .banner-text .text2,
+  .banner-text .banner-btn {
+    left: 20px;
+  }
+}
+/* BANNER END */
+
+
+/* VISIMISI */
+.img-card {
   position: relative;
 }
 
-.image_div{
-  text-align: center;
-}
-
-.image_text{
-  color: white;
-}
-.image_text_div{
+.img-text {
   position: absolute;
-  top: 75px;
-  left: 270px;
-  font-size: 65px;
-}
-
-.good_quality_text{
-  color: rgb(255, 92, 28);
-}
-
-
-
-/* ABOUT US */
-/* About Us Section */
-#about_us_section{
-  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
 }
-/* About Us Image */
-.about_us_img{
-  float: left;
-}
-/* About Us Image Di */
-.about_us_img_div{
-  margin-left: 50px;
-}
-/* About Us Text */
-.about_us_text{
-  color: white;
-  float: right;
-  width: 650px;
-  margin-right: 50px;
-}
-/* About Us Title */
-.about_us_title{
-  font-size: 50px;
+.img-text .text1 {
+  display: block;
+  font-family: 'Poppins';
+  font-size: 35px;
   font-weight: bold;
-  font-style: italic;
-  color: rgb(255, 106, 46);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-/* About Us Description */
-.about_us_description{
-  font-size: 17px;
-}
-
-
-/* VISION AND MISSION */
-#vision_and_mission_section{
-  /* 520 */
-  margin-top: 670px;
-}
-
-.vision_and_mission_title{
-  font-size: 50px;
-  font-weight: bold;
-  font-style: italic;
-  color: rgb(255, 106, 46);
-}
-
-.vision_and_mission_title_div{
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-
-/* PELAYANAN YANG BAIK */
-/* Good Service */
-.good_service{
-  color: white;
-  width: 30%;
-  text-align: center;
-  border: 1px solid #ECE2D2;
-  padding: 20px;
-  margin-right: 15px;
-}
-/* Good Service Title */
-.good_service_title{
-  font-weight: bold;
-  font-size: 30px;
-  color: rgb(255, 106, 46);
-}
-/* Good Service Description */
-.good_service_description{
-  color: white;
-}
-.good_quality_products_image{
-  margin-top: 25px;
+.img-text .text2 {
+  display: block;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.img-text .view-more-btn {
+  border: none;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.img-text .view-more-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* VISIMISI END */
+
+
+/* TRUK */
+.carousel-caption {
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 20px; /* Smaller font size on small screens */
+  }
+}
 
-/* PRODUK BERKUALITAS */
-/* Good Quality Products */
-.good_quality_products{
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 15px; /* Even smaller font size on extra small screens */
+  }
+}
+/* TRUK */
+
+
+/* CONTACT */
+#contactForm label {
+  font-family: 'Poppins';
+}
+
+#contactForm input, #contactForm textarea {
+  margin-bottom: 15px;
+  border: 1px solid #b3b3b3;
+  height: 30px;
+  font-size: 14px;
+}
+
+#contactForm .kirim-btn {
+  border: none;
+  background-color: black;
   color: white;
+  padding: 5px 30px;
+  transition: 0.3s;
   width: 30%;
-  text-align: center;
-  border: 1px solid #ECE2D2;
-  padding: 20px;
-  margin-right: 15px;
-}
-/* Good Quality Products Title */
-.good_quality_products_title{
-  font-weight: bold;
-  font-size: 30px;
-  color: rgb(255, 106, 46);
-}
-/* Good Service Description */
-.good_quality_products_description{
-  color: white;
 }
 
-
-/* HARGA TERJANGKAU */
-.affordable_price{
-  color: white;
-  width: 30%;
-  text-align: center;
-  border: 1px solid #ECE2D2;
-  padding: 20px;
-}
-/* Good Service Title */
-.affordable_price_title{
-  font-weight: bold;
-  font-size: 30px;
-  color: rgb(255, 106, 46);
-}
-/* Good Service Description */
-.affordable_price_description{
-  color: white;
-}
-
-.container{
-  width: 100%;
-
-  display: flex;
-
+#contactForm .kirim-btn:hover {
+  background-color: #2e404c;
 }
